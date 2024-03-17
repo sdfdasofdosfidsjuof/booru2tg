@@ -39,7 +39,7 @@ def get_ids_by_tag(tag: str) -> str:
                         raise Exception('Search overloaded')
                     else:
                         with open("log_down_link.txt", 'a') as file:
-                            file.write(url)
+                            file.write(url + '\n')
                         return out
                 case 'Nothing found, try google? ':
                     raise Exception('Not found')
